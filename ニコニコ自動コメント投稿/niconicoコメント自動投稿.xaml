@@ -1,0 +1,255 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="895,2737" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Triggers</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="734,2672" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome プニキBB - ニコニコ動画" sap:VirtualizedContainerService.HintSize="672,2584" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="1b2006cb-9dd5-46c8-b5ac-17887830665b" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="シーケンス" sap:VirtualizedContainerService.HintSize="638,2343" sap2010:WorkflowViewState.IdRef="Sequence_17">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:RepeatNumberOfTimesX DisplayName="繰り返し (指定回数)" sap:VirtualizedContainerService.HintSize="576,920" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_1" NumberOfTimes="10000" StartAt="1">
+              <ui:RepeatNumberOfTimesX.Body>
+                <ActivityAction x:TypeArguments="x:Int32">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentItem" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="実行" sap:VirtualizedContainerService.HintSize="416,721" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Delay DisplayName="待機" Duration="00:00:05" sap:VirtualizedContainerService.HintSize="354,123" sap2010:WorkflowViewState.IdRef="Delay_3" />
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="文字を入力 '文字を入力 'TEXTAREA'(1)'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,288" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="1b2006cb-9dd5-46c8-b5ac-17887830665b" Text="888888888" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.nicovideo.jp/watch/sm37128977?ref=search_key_video&amp;playlist=eyJ0eXBlIjoic2VhcmNoIiwiY29udGV4dCI6eyJrZXl3b3JkIjoiXHU3ZmQyXHU4ZmQxXHU1ZTczIiwic29ydEtleSI6Imxhc3RDb21tZW50VGltZSIsInNvcnRPcmRlciI6ImRlc2MiLCJwYWdlIjoxLCJwYWdlU2l6ZSI6MzJ9fQ&amp;ss_pos=1&amp;ss_id=37a38aaf-a3d7-4f92-99e0-5b8b6bd07f4b" CVScreenId="5c20d854-1d97-4fe5-a685-2ba5343d101d" ContentHash="bXNEy-PAskGSNNc7Q77XyQ" CvElementArea="140, 1504, 703, 88" CvType="InputBox" DesignTimeRectangle="145, 1509, 699, 80" DesignTimeScaleFactor="2" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TEXTAREA' type='' class='bg_layer.surfaceHighEm pl_base pr_x2 py_[10px] w_100% h_100% resize_none overflow_hidden white-space_pre text-layer_highEm fw_bold border_[none] [&amp;amp;::placeholder]:text-layer_lowerEm' placeholder='コメントを入力' aaname='' /&gt;" Guid="2c72d343-6918-4fda-871d-32320bd87f38" InformativeScreenshot="727107615386da59ca8a2e93964c7596.png" Reference="2PO24NX6oUW5-mPnMIS7mw/vql4_JBKJ0uy-kMccNEMMA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='hrhr(中華人民共和国).xjp - ニコニコ動画' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="クリック '88888888'" sap:VirtualizedContainerService.HintSize="354,220" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1b2006cb-9dd5-46c8-b5ac-17887830665b" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.nicovideo.jp/watch/sm37128977?ref=search_key_video&amp;playlist=eyJ0eXBlIjoic2VhcmNoIiwiY29udGV4dCI6eyJrZXl3b3JkIjoiXHU3ZmQyXHU4ZmQxXHU1ZTczIiwic29ydEtleSI6Imxhc3RDb21tZW50VGltZSIsInNvcnRPcmRlciI6ImRlc2MiLCJwYWdlIjoxLCJwYWdlU2l6ZSI6MzJ9fQ&amp;ss_pos=1&amp;ss_id=37a38aaf-a3d7-4f92-99e0-5b8b6bd07f4b" DesignTimeRectangle="844, 1509, 112, 80" DesignTimeScaleFactor="2" ElementType="Button" FullSelectorArgument="&lt;webctrl aria-label='コメント投稿ボタン' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='コメント投稿ボタン' tag='BUTTON' type='button' class='cursor_pointer bg_action.primaryAzure fill_action.textOnPrimary w_x7 min-w_x7 h_100% d_flex items_center justify_center rounded-r_m hover:bg_action.primaryAzureHover disabled:fill_action.textOnBase disabled:bg_action.base disabled:pointer-events_none' aaname='' /&gt;" Guid="c8e5f468-4b95-4a3a-b034-b3cee872137e" InformativeScreenshot="199152fbfb61103171247c195093ad93.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='hrhr(中華人民共和国).xjp - ニコニコ動画' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </ui:RepeatNumberOfTimesX.Body>
+            </ui:RepeatNumberOfTimesX>
+            <Sequence DisplayName="シーケンス" sap:VirtualizedContainerService.HintSize="576,1333" sap2010:WorkflowViewState.IdRef="Sequence_16">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Sequence DisplayName="実行" sap:VirtualizedContainerService.HintSize="514,912" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:CommentOut DisplayName="コメント アウト" sap:VirtualizedContainerService.HintSize="452,380" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                  <ui:CommentOut.Body>
+                    <Sequence DisplayName="無視されるアクティビティ" sap:VirtualizedContainerService.HintSize="416,269" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NGetText DisplayName="テキストを取得 '88888888'" sap:VirtualizedContainerService.HintSize="354,181" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="1b2006cb-9dd5-46c8-b5ac-17887830665b" Version="V3">
+                        <uix:NGetText.Target>
+                          <uix:TargetAnchorable BrowserURL="https://www.nicovideo.jp/watch/sm27803042" CVScreenId="c17c3a5b-2eb7-45f0-9438-69c4c294013c" CvElementArea="929, 1657, 166, 52" CvTextArea="945, 1670, 134, 24" CvTextArgument="88888888" CvType="Button" DesignTimeRectangle="947, 1665, 130, 44" DesignTimeScaleFactor="2" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='88888888' class='EasyCommentButton-caption' parentid='js-app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='EasyCommentButton-caption' parentid='js-app' tag='DIV' type='' /&gt;" Guid="96da905f-2bbe-4f12-9c20-2d00039bad68" InformativeScreenshot="580baa5861b7c0ae7c553728cd98cdbc.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='プニキBB - ニコニコ動画' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="c17c3a5b-2eb7-45f0-9438-69c4c294013c" CvElementArea="929, 1657, 166, 52" CvTextArea="945, 1670, 134, 24" CvTextArgument="88888888" CvType="Button" DesignTimeRectangle="931, 1661, 162, 48" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='88888888' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='88888888' tag='BUTTON' type='button' class='ActionButton EasyCommentButton' check:innerText='88888888' /&gt;" Guid="1cd5612d-a28c-4622-8dbc-e94efd4dafff" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NGetText.Target>
+                      </uix:NGetText>
+                    </Sequence>
+                  </ui:CommentOut.Body>
+                </ui:CommentOut>
+                <ui:CommentOut DisplayName="コメント アウト" sap:VirtualizedContainerService.HintSize="452,410" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                  <ui:CommentOut.Body>
+                    <Sequence DisplayName="無視されるアクティビティ" sap:VirtualizedContainerService.HintSize="416,306" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="クリック '88888888'" sap:VirtualizedContainerService.HintSize="354,218" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1b2006cb-9dd5-46c8-b5ac-17887830665b" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://www.nicovideo.jp/watch/sm27803042" CVScreenId="c17c3a5b-2eb7-45f0-9438-69c4c294013c" CvElementArea="929, 1657, 166, 52" CvTextArea="945, 1670, 134, 24" CvTextArgument="88888888" CvType="Button" DesignTimeRectangle="947, 1665, 130, 44" DesignTimeScaleFactor="2" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='88888888' class='EasyCommentButton-caption' parentid='js-app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='88888888' class='EasyCommentButton-caption' parentid='js-app' tag='DIV' type='' check:innerText='88888888' /&gt;" Guid="eda16f49-6ee5-490e-801a-59e622bf2d19" InformativeScreenshot="6464f939e1757c18a237a17b4ce1d777.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='プニキBB - ニコニコ動画' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="c17c3a5b-2eb7-45f0-9438-69c4c294013c" CvElementArea="929, 1657, 166, 52" CvTextArea="945, 1670, 134, 24" CvTextArgument="88888888" CvType="Button" DesignTimeRectangle="931, 1661, 162, 48" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='88888888' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='88888888' tag='BUTTON' type='button' class='ActionButton EasyCommentButton' check:innerText='88888888' /&gt;" Guid="6f9c4cbc-8ebc-4e58-a702-c6010c42b467" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                      </uix:NClick>
+                    </Sequence>
+                  </ui:CommentOut.Body>
+                </ui:CommentOut>
+              </Sequence>
+              <ui:CommentOut DisplayName="コメント アウト" sap:VirtualizedContainerService.HintSize="514,306" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="無視されるアクティビティ" sap:VirtualizedContainerService.HintSize="416,202" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Delay DisplayName="待機" Duration="00:00:05" sap:VirtualizedContainerService.HintSize="354,114" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="lHvwO3xrWU-vNUgi5figrQ" IconBase64="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" InformativeScreenshot="f1c45e8ce032d04d20fd9f4c5d3a9f79.jpg" Reference="2PO24NX6oUW5-mPnMIS7mw/bKIe1GDHaUyZRmK0w8zBAA" Selector="&lt;html app='chrome.exe' title='プニキBB - ニコニコ動画' /&gt;" Title="プニキBB - ニコニコ動画" Url="https://www.nicovideo.jp/watch/sm37128977" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
